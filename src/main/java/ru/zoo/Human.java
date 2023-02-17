@@ -1,4 +1,4 @@
-package zoo;
+package ru.zoo;
 
 import java.util.Objects;
 
@@ -10,11 +10,11 @@ public abstract class Human {
     //5) Следит за белками
     //6) должен наложить себе повязку
 
-    boolean hungry; //false
+    public boolean hungry; //false
 
-    boolean hurt; //false
+    public boolean hurt; //false
 
-    String profession;
+    public String profession;
 
     abstract void lunch();
 

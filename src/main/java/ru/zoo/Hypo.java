@@ -1,4 +1,4 @@
-package zoo;
+package ru.zoo;
 
 public class Hypo extends Animal {
 

@@ -1,4 +1,4 @@
-package zoo;
+package ru.zoo;
 
 //1) Кормит всех животных
 //2) Вычесывает кошачьих
@@ -32,6 +32,10 @@ public class Zookeeper extends Human {
         } else {
             System.out.println("Бегемоту пока не нужно менять воду");
         }
+    }
+
+    void feed(Animal animal) {
+        animal.eat();
     }
 
     public Zookeeper() {

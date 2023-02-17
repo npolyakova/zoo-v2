@@ -1,4 +1,4 @@
-package zoo;
+package ru.zoo;
 
 //1) Обходит каждое животное и проверяет его здоровье
 //2) Помещает в карантин, изолируя от других животных
@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Veterinarian extends Human {
 
     @Override
-    void lunch() {
+    public void lunch() {
         if (hungry) {
             System.out.println("Ветеринар пообедал");
             hungry = false;
@@ -18,7 +18,7 @@ public class Veterinarian extends Human {
         }
     }
     @Override
-    void makeBandage() {
+    public void makeBandage() {
         if (hurt) {
             System.out.println("Ветеринар наложил себе повязку");
             hurt = false;
@@ -39,6 +39,8 @@ public class Veterinarian extends Human {
     }
 
     public Veterinarian() {
+
         profession = "Ветеринар";
+        hurt = false;
     }
 }
